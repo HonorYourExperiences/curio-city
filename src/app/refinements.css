@@ -1,0 +1,1056 @@
+/* Native, lightweight adaptations of the interaction principles studied in
+   Dennis Snellenberg's buttons, Lusion's fluid layout, and Bruno Simon's
+   action feedback. Original BYDT graphics; no third-party animation runtime. */
+:root {
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-settle: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --duration-quick: 180ms;
+  --duration-reveal: 420ms;
+  --shadow-paper: 0 2px 0 #ddd3ed, 0 12px 28px #4a286a05;
+}
+h1,
+h2,
+h3,
+.brand strong,
+.prompt strong,
+.journey-sentence {
+  font-family: var(--font-display), Arial, sans-serif;
+  font-weight: 700;
+}
+h1 {
+  text-wrap: balance;
+}
+.topbar {
+  padding-block: 25px 22px;
+}
+.brand strong {
+  font-size: 38px;
+  letter-spacing: -2.5px;
+}
+.brand svg {
+  transition: transform var(--duration-reveal) var(--ease-out);
+}
+.brand:hover svg {
+  transform: rotate(18deg);
+}
+.topbar nav button,
+.language button {
+  min-height: 44px;
+}
+.topbar nav button {
+  position: relative;
+}
+.topbar nav button.active {
+  box-shadow: inset 0 0 0 1px #bda6e02e;
+}
+.demo-strip {
+  margin-bottom: 20px;
+}
+.intro {
+  gap: clamp(24px, 6vw, 90px);
+  align-items: center;
+  margin: 27px 0 37px;
+}
+.intro h1 {
+  font-size: clamp(46px, 5.1vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+  max-width: 900px;
+}
+.handwritten-accent {
+  display: inline-block;
+  position: relative;
+  color: #8060b4;
+  z-index: 0;
+}
+.handwritten-accent::after {
+  content: "";
+  position: absolute;
+  left: 1%;
+  right: -2%;
+  height: 8px;
+  bottom: -9px;
+  background: #f6b58e;
+  border-radius: 50%;
+  transform: rotate(-2deg);
+  z-index: -1;
+}
+.journey-trail {
+  display: flex;
+  gap: clamp(22px, 3.8vw, 55px);
+  margin: 16px 10px 0 0;
+  padding: 0;
+  list-style: none;
+  align-self: flex-end;
+  flex-shrink: 0;
+}
+.journey-trail li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #78658b;
+  min-width: 50px;
+}
+.journey-trail li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: calc(50% + 29px);
+  top: 23px;
+  width: clamp(12px, 3.5vw, 48px);
+  border-top: 1px dashed #b8a5cd;
+}
+.trail-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid #d8cce9;
+  background: #f7f2ff;
+  transition:
+    background var(--duration-reveal) var(--ease-settle),
+    box-shadow var(--duration-reveal) var(--ease-settle);
+}
+.journey-trail [aria-current="step"] {
+  color: #553a75;
+  font-weight: 700;
+}
+.journey-trail [aria-current="step"] .trail-icon {
+  background: #fce2c8;
+  color: #ba5b32;
+  border-color: #e9c19e;
+  box-shadow: 0 0 0 5px #fff9;
+}
+.journey-trail [data-complete="true"] .trail-icon {
+  background: #deebd4;
+  border-color: #bed5ae;
+  color: #4a6f42;
+}
+.paper {
+  box-shadow: var(--shadow-paper);
+  border: 1px solid #fff9;
+}
+.workshop-grid {
+  gap: 22px;
+  align-items: start;
+}
+.conversation {
+  padding: 29px 28px 23px;
+  min-height: 520px;
+}
+.deck-panel {
+  padding: 29px 24px 23px;
+  min-height: 520px;
+}
+.conversation h2 {
+  font-size: clamp(26px, 2.35vw, 36px);
+  letter-spacing: -1.3px;
+  line-height: 1.1;
+  max-width: 480px;
+}
+.greeting {
+  font-size: 12px;
+  color: #79698a;
+}
+.subtext {
+  font-size: 14px;
+}
+.prompt-grid {
+  gap: 12px;
+  margin-top: 3px;
+  margin-bottom: 29px;
+}
+.prompt {
+  min-height: 222px;
+  padding: 15px 9px 17px;
+  border: 1px solid transparent;
+  box-shadow:
+    inset 0 1px 0 #fff6,
+    0 2px 0 #3f215c0d;
+  transition:
+    transform var(--duration-reveal) var(--ease-out),
+    box-shadow var(--duration-reveal) var(--ease-out),
+    border-color var(--duration-quick);
+}
+.prompt .workshop-mark {
+  width: clamp(72px, 7vw, 106px);
+  height: auto;
+  flex-shrink: 0;
+}
+.workshop-mark {
+  display: block;
+  overflow: visible;
+}
+.prompt strong {
+  font-size: 17px;
+  margin-top: 9px;
+  line-height: 1.15;
+}
+.prompt > span:not(.round-arrow) {
+  font-size: 11px;
+}
+.round-arrow {
+  height: 34px;
+  width: 34px;
+  background: #fff9;
+  border: 1px solid #fff8;
+  margin-top: 15px;
+  transition:
+    background var(--duration-quick),
+    color var(--duration-quick);
+}
+.round-arrow svg {
+  transition: transform 240ms var(--ease-out);
+}
+.primary,
+.orange,
+.secondary {
+  min-height: 44px;
+  transition:
+    background var(--duration-quick),
+    transform var(--duration-quick),
+    box-shadow 240ms var(--ease-out);
+}
+.primary {
+  box-shadow: 0 3px 0 #51368b33;
+}
+.orange {
+  background: #f7764e;
+  box-shadow: 0 3px 0 #bc482a33;
+}
+.primary > svg,
+.orange > svg,
+.secondary > svg,
+.explore-link > svg {
+  transition: transform 240ms var(--ease-out);
+}
+.primary:hover > svg,
+.orange:hover > svg,
+.secondary:hover > svg {
+  transform: translateX(3px);
+}
+.explore-link:hover > svg {
+  transform: translate(2px, -2px);
+}
+.primary:active,
+.orange:active,
+.secondary:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+.prompt:hover {
+  transform: none;
+}
+.prompt:focus-visible {
+  border-color: #76509b;
+  box-shadow: 0 0 0 4px #c9b5e342;
+}
+.chat-input {
+  box-shadow: 0 3px 0 #e5dcf342;
+  transition:
+    border-color 180ms,
+    box-shadow 180ms;
+}
+.chat-input:focus-within {
+  border-color: #9975bf;
+  box-shadow: 0 0 0 4px #e8def5;
+}
+.chat-input input {
+  font-size: 16px;
+}
+.deck-heading h2 {
+  font-size: 21px;
+}
+.deck {
+  gap: 11px;
+  padding: 3px 1px 8px;
+  align-items: start;
+}
+.cape {
+  position: relative;
+  border: 1px solid #fff8;
+  box-shadow: 0 3px 0 #3e215e16;
+  animation: card-arrive var(--duration-reveal) var(--ease-out) backwards;
+}
+.cape-1 {
+  animation-delay: 70ms;
+}
+.cape-2 {
+  animation-delay: 140ms;
+}
+.cape-art {
+  height: 105px;
+}
+.cape-art > .workshop-mark:first-child {
+  width: 102px;
+  height: 86px;
+  transition: transform var(--duration-reveal) var(--ease-out);
+}
+.cape-copy {
+  min-height: 140px;
+  padding: 13px 10px 5px;
+  background: #fffdf9df;
+}
+.cape-copy h3 {
+  font-size: 17px;
+  line-height: 1.1;
+}
+.cape-copy > p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #594767;
+}
+.cape-copy details {
+  margin-top: 4px;
+}
+.cape-copy summary {
+  font-size: 11px;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  list-style: none;
+  color: #73588d;
+}
+.cape-copy summary::-webkit-details-marker {
+  display: none;
+}
+.cape-copy summary::before {
+  content: "+";
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  width: 14px;
+  transition: transform var(--duration-quick);
+}
+.cape-copy details[open] summary::before {
+  transform: rotate(45deg);
+}
+.cape-copy details p {
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  padding-bottom: 12px;
+}
+.launchpad {
+  border-top: 1px dashed #ddcfe3;
+  padding-top: 22px;
+  margin-top: 17px;
+}
+.section-label {
+  margin-bottom: 17px;
+}
+.section-label h2 {
+  font-size: 20px;
+}
+.mission-symbol {
+  background: #f9ebd6;
+  border: 1px solid #f3dfc2;
+}
+.materials > span {
+  border: 1px solid #e8dfd7;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 11px;
+  padding: 5px 9px;
+}
+.launchpad > .orange {
+  font-size: 14px;
+  min-height: 47px;
+}
+.journey {
+  position: relative;
+  background: #f0e9f7;
+  border: 1px solid #e7ddef;
+  min-height: 250px;
+}
+.journey-sentence {
+  font-size: 25px;
+  letter-spacing: -0.6px;
+  animation: sentence-arrive 260ms var(--ease-out) backwards;
+}
+.dots {
+  gap: 0;
+}
+.dots button,
+.dots button.current {
+  position: relative;
+  height: 44px;
+  width: 32px;
+  background: transparent;
+  border-radius: 8px;
+}
+.dots button::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c5b3dc;
+  transform: translate(-50%, -50%);
+  transition: width 180ms;
+}
+.dots button.current::before {
+  width: 18px;
+  border-radius: 5px;
+  background: #8862b8;
+}
+.soft-button {
+  min-height: 44px;
+  font-size: 12px;
+}
+.start-over {
+  min-height: 40px;
+  font-size: 11px;
+}
+.step {
+  background: #f7efe6;
+  border: 1px solid #ecddcf;
+}
+.step > p {
+  font-size: 21px;
+  line-height: 1.35;
+}
+.step-controls .icon-button {
+  width: 44px;
+  height: 44px;
+}
+.spark-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #806294;
+  min-height: 22px;
+  margin-bottom: 9px;
+}
+.spark-status > span {
+  color: #e39152;
+}
+.conversation-foot {
+  font-size: 10px;
+  line-height: 1.4;
+}
+.bottom-note {
+  padding-top: 26px;
+}
+.bottom-note button {
+  min-height: 44px;
+}
+footer {
+  align-items: center;
+  padding-block: 25px 30px;
+  margin-top: 24px;
+  border-color: #dcd0e9;
+}
+.creative-signature {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 11px;
+  color: #796286;
+  line-height: 1.6;
+}
+.creative-signature > svg {
+  color: #dd8b57;
+  flex-shrink: 0;
+}
+.creative-signature strong {
+  color: #584269;
+  font-weight: 600;
+}
+.ai-mark {
+  display: inline-block;
+  margin-left: 4px;
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: -0.4px;
+  color: #795491;
+}
+footer > details {
+  font-size: 11px;
+}
+footer summary {
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+}
+footer summary::before {
+  content: "+";
+  margin-right: 6px;
+}
+footer details[open] summary::before {
+  content: "−";
+}
+@keyframes card-arrive {
+  from {
+    opacity: 0.65;
+    transform: translateY(9px) rotate(-1deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes sentence-arrive {
+  from {
+    opacity: 0.6;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .prompt:hover {
+    transform: translateY(-4px) rotate(-0.6deg);
+    border-color: #76509b35;
+    box-shadow:
+      0 7px 0 #3f215c0a,
+      0 13px 20px #3f215c0b;
+  }
+  .prompt:active {
+    transform: translateY(0) rotate(0);
+    box-shadow: inset 0 1px 0 #fff6;
+  }
+  .prompt:hover .round-arrow {
+    background: #fff;
+    color: #6e438c;
+  }
+  .prompt:hover .round-arrow svg {
+    transform: translateX(3px);
+  }
+  .cape:hover .workshop-mark {
+    transform: translateY(-3px) rotate(3deg);
+  }
+}
+@media (max-width: 1150px) {
+  .intro h1 {
+    font-size: clamp(44px, 5.5vw, 62px);
+  }
+  .journey-trail {
+    gap: 25px;
+    margin-right: 0;
+  }
+  .journey-trail li:not(:last-child)::after {
+    width: 21px;
+  }
+  .conversation {
+    padding: 25px 22px;
+  }
+  .deck-panel {
+    padding: 25px 20px;
+  }
+  .prompt strong {
+    font-size: 15px;
+  }
+  .prompt > span:not(.round-arrow) {
+    font-size: 10px;
+  }
+  .cape-copy h3 {
+    font-size: 15px;
+  }
+  .cape-copy > p {
+    font-size: 12px;
+  }
+  .cape-art > .workshop-mark:first-child {
+    width: 90px;
+  }
+}
+@media (max-width: 900px) {
+  .intro {
+    margin-top: 18px;
+    gap: 20px;
+  }
+  .intro h1 {
+    font-size: 46px;
+    letter-spacing: -2px;
+  }
+  .journey-trail {
+    gap: 21px;
+    margin-bottom: 4px;
+  }
+  .journey-trail li {
+    font-size: 10px;
+    min-width: 43px;
+  }
+  .trail-icon {
+    width: 42px;
+    height: 42px;
+  }
+  .journey-trail li:not(:last-child)::after {
+    left: calc(50% + 25px);
+    top: 20px;
+    width: 15px;
+  }
+  .workshop-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .conversation {
+    min-height: 0;
+  }
+  .conversation h2 {
+    max-width: none;
+    font-size: 34px;
+  }
+  .prompt {
+    min-height: 205px;
+  }
+  .prompt strong {
+    font-size: 18px;
+  }
+  .prompt > span:not(.round-arrow) {
+    font-size: 12px;
+  }
+  .prompt .workshop-mark {
+    width: 95px;
+  }
+  .deck-panel {
+    min-height: 0;
+  }
+  .deck-heading > span {
+    display: block;
+    font-size: 10px;
+  }
+  .deck {
+    gap: 15px;
+  }
+  .cape-art {
+    height: 102px;
+  }
+  .cape-copy {
+    min-height: 133px;
+  }
+  .cape-copy h3 {
+    font-size: 19px;
+  }
+  .cape-copy > p {
+    font-size: 14px;
+  }
+  .mission-summary h3 {
+    font-size: 21px;
+  }
+  .conversation-foot {
+    flex-direction: row;
+  }
+  .journey-sentence {
+    font-size: 26px;
+    max-width: 550px;
+  }
+  footer {
+    flex-wrap: wrap;
+    gap: 12px 22px;
+  }
+}
+@media (max-width: 670px) {
+  .topbar {
+    padding: 20px 18px 10px;
+    gap: 13px 8px;
+  }
+  .brand {
+    gap: 9px;
+  }
+  .brand strong {
+    font-size: 33px;
+  }
+  .brand span {
+    font-size: 8px;
+  }
+  .top-actions {
+    gap: 5px;
+  }
+  .language button {
+    min-height: 38px;
+    min-width: 35px;
+    padding: 6px;
+  }
+  .band-label select {
+    max-width: 115px;
+    min-height: 38px;
+    font-size: 11px;
+  }
+  .topbar nav button {
+    font-size: 12px;
+    padding: 10px 17px;
+  }
+  .demo-strip {
+    margin-block: 3px 16px;
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .intro {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px 0 26px;
+    gap: 23px;
+  }
+  .intro h1 {
+    font-size: clamp(38px, 10.4vw, 53px);
+    line-height: 1.03;
+    letter-spacing: -1.8px;
+    max-width: 100%;
+  }
+  .handwritten-accent::after {
+    height: 5px;
+    bottom: -5px;
+  }
+  .journey-trail {
+    align-self: stretch;
+    justify-content: flex-start;
+    gap: 36px;
+    margin: 0 0 0 3px;
+  }
+  .journey-trail li {
+    flex-direction: row;
+    gap: 8px;
+    font-size: 11px;
+    min-width: 0;
+  }
+  .trail-icon {
+    width: 34px;
+    height: 34px;
+  }
+  .trail-icon svg {
+    width: 17px;
+  }
+  .journey-trail li:not(:last-child)::after {
+    left: calc(100% + 9px);
+    top: 17px;
+    width: 17px;
+  }
+  .paper {
+    border-radius: 20px;
+  }
+  .conversation {
+    padding: 23px 18px 18px;
+  }
+  .conversation h2 {
+    font-size: 29px;
+    letter-spacing: -1px;
+  }
+  .greeting {
+    font-size: 12px;
+    margin-bottom: 7px;
+  }
+  .subtext {
+    font-size: 13px;
+    margin-bottom: 19px;
+  }
+  .prompt-grid {
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+  .prompt {
+    padding: 13px 5px 12px;
+    min-height: 175px;
+    border-radius: 13px;
+  }
+  .prompt .workshop-mark {
+    width: 80px;
+    max-width: 100%;
+    height: 68px;
+  }
+  .prompt strong {
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.1;
+  }
+  .prompt > span:not(.round-arrow) {
+    display: none;
+  }
+  .round-arrow {
+    margin-top: 11px;
+    width: 31px;
+    height: 31px;
+  }
+  .chat-input {
+    gap: 8px;
+    min-height: 55px;
+  }
+  .conversation-foot {
+    font-size: 9px;
+    gap: 9px;
+  }
+  .conversation-foot > span:last-child {
+    max-width: 155px;
+    text-align: right;
+  }
+  .deck-panel {
+    padding: 24px 18px 21px;
+    min-width: 0;
+  }
+  .deck-heading {
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
+  .deck-heading {
+    display: block;
+  }
+  .deck-heading h2 {
+    font-size: 23px;
+  }
+  .deck-heading > span {
+    font-size: 11px;
+    max-width: none;
+    text-align: left;
+    margin-top: 5px;
+  }
+  .deck {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: min(73%, 230px);
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 2px;
+    gap: 12px;
+    padding: 4px 2px 15px;
+    scrollbar-color: #c7b1da transparent;
+    scrollbar-width: thin;
+    overscroll-behavior-x: contain;
+  }
+  .cape {
+    scroll-snap-align: start;
+  }
+  .cape-art {
+    height: 108px;
+  }
+  .cape-art > .workshop-mark:first-child {
+    width: 110px;
+    height: 90px;
+  }
+  .cape-copy {
+    padding: 14px 13px 4px;
+    min-height: 148px;
+  }
+  .cape-copy h3 {
+    font-size: 21px;
+  }
+  .cape-copy > p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .cape-copy summary {
+    min-height: 42px;
+    font-size: 12px;
+  }
+  .launchpad {
+    margin-top: 15px;
+    padding-top: 20px;
+  }
+  .section-label h2 {
+    font-size: 21px;
+  }
+  .mission-summary h3 {
+    font-size: 20px;
+  }
+  .mission-summary .muted {
+    font-size: 12px;
+  }
+  .mission-summary small {
+    font-size: 11px;
+  }
+  .journey {
+    padding: 17px 18px 9px;
+    min-height: 240px;
+  }
+  .journey-sentence {
+    font-size: 25px;
+  }
+  .step > p {
+    font-size: 23px;
+  }
+  .bottom-note > span:not(.small-star) {
+    font-size: 11px;
+    max-width: 280px;
+  }
+  .creative-signature {
+    font-size: 12px;
+    align-self: flex-start;
+  }
+  footer {
+    padding: 23px 19px;
+    gap: 13px;
+  }
+  footer > details {
+    align-self: flex-start;
+    font-size: 11px;
+  }
+  footer > a {
+    align-self: flex-start;
+    margin-left: 0;
+    font-size: 11px;
+  }
+}
+@media (max-width: 370px) {
+  .journey-trail {
+    gap: 24px;
+  }
+  .journey-trail li {
+    font-size: 10px;
+    gap: 5px;
+  }
+  .journey-trail li:not(:last-child)::after {
+    left: calc(100% + 7px);
+    width: 12px;
+  }
+  .prompt strong {
+    font-size: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .prompt:hover,
+  .brand:hover svg,
+  .cape:hover .workshop-mark {
+    transform: none;
+  }
+}
+
+/* Audit fixes: lead with the offline task, then its supporting capability cards. */
+.intro--active {
+  margin: 18px 0 25px;
+  justify-content: flex-start;
+}
+.intro--active .journey-trail {
+  margin: 0;
+  align-self: auto;
+}
+.conversation:has(.journey),
+.conversation:has(.completed-story) {
+  min-height: 0;
+}
+.conversation:has(.journey) > h2 {
+  margin-bottom: 19px;
+}
+.has-mission > .launchpad {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+  border-bottom: 1px dashed #ddcfe3;
+  padding-bottom: 22px;
+  margin-bottom: 23px;
+  scroll-margin-top: 24px;
+}
+.has-mission > .launchpad:focus {
+  outline: 3px solid #9671bd;
+  outline-offset: 8px;
+  border-radius: 8px;
+}
+.handoff-button {
+  font-size: 12px;
+}
+.completed-story {
+  margin: 22px 0;
+  background: #edf2e7;
+  border: 1px solid #d8e2ce;
+  border-radius: 17px;
+  padding: 23px;
+}
+.receipt-seal {
+  display: grid;
+  place-items: center;
+  width: 57px;
+  height: 57px;
+  background: #d3e2c7;
+  color: #5c7f4e;
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+.completed-story .journey-sentence {
+  font-size: 24px;
+  margin-bottom: 22px;
+  min-height: 0;
+}
+.completed-story .primary {
+  width: 100%;
+}
+.completed-story .start-over {
+  margin-top: 9px;
+  color: #637654;
+}
+.mission-receipt {
+  margin-top: 17px;
+}
+.mission-receipt .saved {
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 15px;
+  align-items: center;
+}
+.mission-saved .mission-symbol {
+  background: #e5efdb;
+  border-color: #d3dfc7;
+  color: #668252;
+}
+@media (max-width: 670px) {
+  .intro--active {
+    margin: 15px 0 22px;
+    gap: 0;
+  }
+  .intro--active .journey-trail {
+    margin-left: 3px;
+  }
+  .conversation:has(.journey) {
+    padding-top: 22px;
+  }
+  .conversation:has(.journey) > h2 {
+    font-size: 27px;
+    margin-bottom: 18px;
+  }
+  .has-mission > .launchpad {
+    margin-bottom: 23px;
+    padding-bottom: 23px;
+  }
+  .journey-controls {
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+  .handoff-button {
+    min-height: 44px;
+    font-size: 12px;
+  }
+  .completed-story {
+    padding: 21px 18px;
+  }
+  .completed-story .journey-sentence {
+    font-size: 24px;
+  }
+}
+.brand strong {
+  font-size: 31px;
+  letter-spacing: -1.5px;
+  white-space: nowrap;
+}
+.brand .company-attribution {
+  font-size: 10px;
+  white-space: nowrap;
+  color: #796587;
+  letter-spacing: 0;
+}
+@media (max-width: 1150px) {
+  .brand .company-attribution {
+    display: none;
+  }
+}
+@media (max-width: 670px) {
+  .brand strong {
+    font-size: 27px;
+    letter-spacing: -1.1px;
+  }
+  .brand .company-attribution {
+    display: block;
+    font-size: 9px;
+  }
+}

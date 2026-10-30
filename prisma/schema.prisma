@@ -1,0 +1,31 @@
+generator client {
+ provider = "prisma-client-js"
+}
+datasource db {
+ provider = "sqlite"
+ url = env("DATABASE_URL")
+}
+model Profile {
+ id String @id
+ events Evidence[]
+ assignments Assignment[]
+}
+model Assignment {
+ id String @id
+ profileId String
+ profile Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+ payload String
+ createdAt DateTime @default(now())
+ events Evidence[]
+}
+model Evidence {
+ id String @id @default(cuid())
+ profileId String
+ profile Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+ assignmentId String
+ assignment Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+ stage String
+ payload String
+ timestamp DateTime @default(now())
+ @@unique([assignmentId, stage])
+}

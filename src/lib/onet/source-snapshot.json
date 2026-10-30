@@ -1,0 +1,1198 @@
+{
+  "source": "https://www.onetcenter.org/dl_files/database/db_31_0_text.zip",
+  "version": "31.0",
+  "retrieved": "2026-10-30",
+  "archiveSha256": "6883548adf5fde64cf6f801b35d15519c9225f2732c3cab0e281c652d16b23a9",
+  "elements": [
+    {
+      "Element ID": "1.A.1.b.1",
+      "Element Name": "Fluency of Ideas",
+      "Description": "The ability to come up with a number of ideas about a topic (the number of ideas is important, not their quality, correctness, or creativity)."
+    },
+    {
+      "Element ID": "1.A.1.b.2",
+      "Element Name": "Originality",
+      "Description": "The ability to come up with unusual or clever ideas about a given topic or situation, or to develop creative ways to solve a problem."
+    },
+    {
+      "Element ID": "1.A.1.b.3",
+      "Element Name": "Problem Sensitivity",
+      "Description": "The ability to tell when something is wrong or is likely to go wrong. It does not involve solving the problem, only recognizing that there is a problem."
+    },
+    {
+      "Element ID": "1.A.1.b.4",
+      "Element Name": "Deductive Reasoning",
+      "Description": "The ability to apply general rules to specific problems to produce answers that make sense."
+    },
+    {
+      "Element ID": "1.A.1.b.5",
+      "Element Name": "Inductive Reasoning",
+      "Description": "The ability to combine pieces of information to form general rules or conclusions (includes finding a relationship among seemingly unrelated events)."
+    },
+    {
+      "Element ID": "1.A.1.f.2",
+      "Element Name": "Visualization",
+      "Description": "The ability to imagine how something will look after it is moved around or when its parts are moved or rearranged."
+    },
+    {
+      "Element ID": "1.A.2.a.2",
+      "Element Name": "Manual Dexterity",
+      "Description": "The ability to quickly move your hand, your hand together with your arm, or your two hands to grasp, manipulate, or assemble objects."
+    },
+    {
+      "Element ID": "1.D.1.a",
+      "Element Name": "Innovation",
+      "Description": "A tendency to be inventive, to be imaginative, and to adopt new perspectives on ways to accomplish work."
+    },
+    {
+      "Element ID": "1.D.1.c",
+      "Element Name": "Intellectual Curiosity",
+      "Description": "A tendency to seek out and acquire new work-related knowledge and obtain a deep understanding of work-related subjects."
+    },
+    {
+      "Element ID": "1.D.1.d",
+      "Element Name": "Tolerance for Ambiguity",
+      "Description": "A tendency to be comfortable with ambiguity and uncertainty at work."
+    },
+    {
+      "Element ID": "1.D.1.e",
+      "Element Name": "Initiative",
+      "Description": "A tendency to be proactive and take on extra responsibilities and tasks that may fall outside of one's required work role."
+    },
+    {
+      "Element ID": "1.D.1.h",
+      "Element Name": "Perseverance",
+      "Description": "A tendency to exhibit determination and resolve to perform or complete tasks in the face of difficult circumstances or obstacles at work."
+    },
+    {
+      "Element ID": "1.D.2.d",
+      "Element Name": "Cooperation",
+      "Description": "A tendency to be pleasant, helpful, and willing to assist others at work."
+    },
+    {
+      "Element ID": "1.D.3.b",
+      "Element Name": "Attention to Detail",
+      "Description": "A tendency to be detail-oriented, organized, and thorough in completing work."
+    },
+    {
+      "Element ID": "1.D.4.a",
+      "Element Name": "Stress Tolerance",
+      "Description": "A tendency to cope and function effectively in stressful situations at work."
+    },
+    {
+      "Element ID": "2.B.1.a",
+      "Element Name": "Social Perceptiveness",
+      "Description": "Being aware of others' reactions and understanding why they react as they do."
+    },
+    {
+      "Element ID": "2.B.1.b",
+      "Element Name": "Coordination",
+      "Description": "Adjusting actions in relation to others' actions."
+    },
+    {
+      "Element ID": "2.B.2.i",
+      "Element Name": "Complex Problem Solving",
+      "Description": "Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions."
+    },
+    {
+      "Element ID": "2.B.3.b",
+      "Element Name": "Technology Design",
+      "Description": "Generating or adapting equipment and technology to serve user needs."
+    },
+    {
+      "Element ID": "2.B.3.e",
+      "Element Name": "Programming",
+      "Description": "Writing computer programs for various purposes."
+    }
+  ],
+  "occupations": [
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Title": "Civil Engineers",
+      "Description": "Perform engineering duties in planning, designing, and overseeing construction and maintenance of building structures and facilities, such as roads, railroads, airports, bridges, harbors, channels, dams, irrigation projects, pipelines, power plants, and water and sewage systems."
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Title": "Mechanical Engineers",
+      "Description": "Perform engineering duties in planning and designing tools, engines, machines, and other mechanically functioning equipment. Oversee installation, operation, maintenance, and repair of equipment such as centralized heat, gas, water, and steam systems."
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Title": "Elementary School Teachers, Except Special Education",
+      "Description": "Teach academic and social skills to students at the elementary school level."
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Title": "Commercial and Industrial Designers",
+      "Description": "Design and develop manufactured products, such as cars, home appliances, and children's toys. Combine artistic talent with research on product use, marketing, and materials to create the most functional and appealing product design."
+    }
+  ],
+  "dwas": [
+    {
+      "GWA Element ID": "4.A.1.b.2",
+      "IWA Element ID": "4.A.1.b.2.c",
+      "DWA Element ID": "4.A.1.b.2.c.4",
+      "DWA Element Name": "Test characteristics of materials or structures."
+    },
+    {
+      "GWA Element ID": "4.A.3.a.2",
+      "IWA Element ID": "4.A.3.a.2.aj",
+      "DWA Element ID": "4.A.3.a.2.aj.1",
+      "DWA Element Name": "Build models, patterns, or templates."
+    },
+    {
+      "GWA Element ID": "4.A.3.b.2",
+      "IWA Element ID": "4.A.3.b.2.d",
+      "DWA Element ID": "4.A.3.b.2.d.1",
+      "DWA Element Name": "Create models of engineering designs or methods."
+    },
+    {
+      "GWA Element ID": "4.A.4.b.3",
+      "IWA Element ID": "4.A.4.b.3.b",
+      "DWA Element ID": "4.A.4.b.3.b.6",
+      "DWA Element Name": "Apply multiple teaching methods."
+    }
+  ],
+  "occupationDwaLinks": [
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Task ID": "153",
+      "DWA Element ID": "4.A.1.b.2.c.4",
+      "Date": "03/2014",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Task ID": "20735",
+      "DWA Element ID": "4.A.3.b.2.d.1",
+      "Date": "07/2015",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Task ID": "6540",
+      "DWA Element ID": "4.A.4.b.3.b.6",
+      "Date": "03/2014",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Task ID": "6908",
+      "DWA Element ID": "4.A.3.a.2.aj.1",
+      "Date": "03/2014",
+      "Domain Source": "Analyst"
+    }
+  ],
+  "importanceRatings": [
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.A.1.b.1",
+      "Element Name": "Fluency of Ideas",
+      "Scale ID": "IM",
+      "Data Value": "3.75",
+      "N": "8",
+      "Standard Error": "0.1637",
+      "Lower CI Bound": "3.4292",
+      "Upper CI Bound": "4.0708",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2021",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.A.1.b.2",
+      "Element Name": "Originality",
+      "Scale ID": "IM",
+      "Data Value": "3.25",
+      "N": "8",
+      "Standard Error": "0.1637",
+      "Lower CI Bound": "2.9292",
+      "Upper CI Bound": "3.5708",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2021",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.A.1.b.3",
+      "Element Name": "Problem Sensitivity",
+      "Scale ID": "IM",
+      "Data Value": "4.00",
+      "N": "8",
+      "Standard Error": "0.0000",
+      "Lower CI Bound": "4.0000",
+      "Upper CI Bound": "4.0000",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2021",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.A.1.b.4",
+      "Element Name": "Deductive Reasoning",
+      "Scale ID": "IM",
+      "Data Value": "4.00",
+      "N": "8",
+      "Standard Error": "0.0000",
+      "Lower CI Bound": "4.0000",
+      "Upper CI Bound": "4.0000",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2021",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.A.1.b.5",
+      "Element Name": "Inductive Reasoning",
+      "Scale ID": "IM",
+      "Data Value": "4.00",
+      "N": "8",
+      "Standard Error": "0.0000",
+      "Lower CI Bound": "4.0000",
+      "Upper CI Bound": "4.0000",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2021",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.A.1.f.2",
+      "Element Name": "Visualization",
+      "Scale ID": "IM",
+      "Data Value": "3.75",
+      "N": "8",
+      "Standard Error": "0.1637",
+      "Lower CI Bound": "3.4292",
+      "Upper CI Bound": "4.0708",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2021",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.A.2.a.2",
+      "Element Name": "Manual Dexterity",
+      "Scale ID": "IM",
+      "Data Value": "1.00",
+      "N": "8",
+      "Standard Error": "0.0000",
+      "Lower CI Bound": "1.0000",
+      "Upper CI Bound": "1.0000",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2021",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.A.1.b.1",
+      "Element Name": "Fluency of Ideas",
+      "Scale ID": "IM",
+      "Data Value": "3.50",
+      "N": "8",
+      "Standard Error": "0.1890",
+      "Lower CI Bound": "3.1296",
+      "Upper CI Bound": "3.8704",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.A.1.b.2",
+      "Element Name": "Originality",
+      "Scale ID": "IM",
+      "Data Value": "3.38",
+      "N": "8",
+      "Standard Error": "0.1830",
+      "Lower CI Bound": "3.0164",
+      "Upper CI Bound": "3.7336",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.A.1.b.3",
+      "Element Name": "Problem Sensitivity",
+      "Scale ID": "IM",
+      "Data Value": "4.00",
+      "N": "8",
+      "Standard Error": "0.0000",
+      "Lower CI Bound": "4.0000",
+      "Upper CI Bound": "4.0000",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.A.1.b.4",
+      "Element Name": "Deductive Reasoning",
+      "Scale ID": "IM",
+      "Data Value": "4.00",
+      "N": "8",
+      "Standard Error": "0.0000",
+      "Lower CI Bound": "4.0000",
+      "Upper CI Bound": "4.0000",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.A.1.b.5",
+      "Element Name": "Inductive Reasoning",
+      "Scale ID": "IM",
+      "Data Value": "4.00",
+      "N": "8",
+      "Standard Error": "0.0000",
+      "Lower CI Bound": "4.0000",
+      "Upper CI Bound": "4.0000",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.A.1.f.2",
+      "Element Name": "Visualization",
+      "Scale ID": "IM",
+      "Data Value": "3.50",
+      "N": "8",
+      "Standard Error": "0.1890",
+      "Lower CI Bound": "3.1296",
+      "Upper CI Bound": "3.8704",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.A.2.a.2",
+      "Element Name": "Manual Dexterity",
+      "Scale ID": "IM",
+      "Data Value": "1.62",
+      "N": "8",
+      "Standard Error": "0.1830",
+      "Lower CI Bound": "1.2664",
+      "Upper CI Bound": "1.9836",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.A.1.b.1",
+      "Element Name": "Fluency of Ideas",
+      "Scale ID": "IM",
+      "Data Value": "3.88",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "3.6300",
+      "Upper CI Bound": "4.1200",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.A.1.b.2",
+      "Element Name": "Originality",
+      "Scale ID": "IM",
+      "Data Value": "3.75",
+      "N": "8",
+      "Standard Error": "0.1637",
+      "Lower CI Bound": "3.4292",
+      "Upper CI Bound": "4.0708",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.A.1.b.3",
+      "Element Name": "Problem Sensitivity",
+      "Scale ID": "IM",
+      "Data Value": "4.00",
+      "N": "8",
+      "Standard Error": "0.0000",
+      "Lower CI Bound": "4.0000",
+      "Upper CI Bound": "4.0000",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.A.1.b.4",
+      "Element Name": "Deductive Reasoning",
+      "Scale ID": "IM",
+      "Data Value": "3.88",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "3.6300",
+      "Upper CI Bound": "4.1200",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.A.1.b.5",
+      "Element Name": "Inductive Reasoning",
+      "Scale ID": "IM",
+      "Data Value": "4.00",
+      "N": "8",
+      "Standard Error": "0.0000",
+      "Lower CI Bound": "4.0000",
+      "Upper CI Bound": "4.0000",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.A.1.f.2",
+      "Element Name": "Visualization",
+      "Scale ID": "IM",
+      "Data Value": "2.62",
+      "N": "8",
+      "Standard Error": "0.1830",
+      "Lower CI Bound": "2.2664",
+      "Upper CI Bound": "2.9836",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.A.2.a.2",
+      "Element Name": "Manual Dexterity",
+      "Scale ID": "IM",
+      "Data Value": "1.50",
+      "N": "8",
+      "Standard Error": "0.2673",
+      "Lower CI Bound": "1.0000",
+      "Upper CI Bound": "2.0238",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.A.1.b.1",
+      "Element Name": "Fluency of Ideas",
+      "Scale ID": "IM",
+      "Data Value": "3.88",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "3.6300",
+      "Upper CI Bound": "4.1200",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2019",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.A.1.b.2",
+      "Element Name": "Originality",
+      "Scale ID": "IM",
+      "Data Value": "3.88",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "3.6300",
+      "Upper CI Bound": "4.1200",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2019",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.A.1.b.3",
+      "Element Name": "Problem Sensitivity",
+      "Scale ID": "IM",
+      "Data Value": "3.62",
+      "N": "8",
+      "Standard Error": "0.1830",
+      "Lower CI Bound": "3.2664",
+      "Upper CI Bound": "3.9836",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2019",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.A.1.b.4",
+      "Element Name": "Deductive Reasoning",
+      "Scale ID": "IM",
+      "Data Value": "3.75",
+      "N": "8",
+      "Standard Error": "0.1637",
+      "Lower CI Bound": "3.4292",
+      "Upper CI Bound": "4.0708",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2019",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.A.1.b.5",
+      "Element Name": "Inductive Reasoning",
+      "Scale ID": "IM",
+      "Data Value": "3.38",
+      "N": "8",
+      "Standard Error": "0.1830",
+      "Lower CI Bound": "3.0164",
+      "Upper CI Bound": "3.7336",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2019",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.A.1.f.2",
+      "Element Name": "Visualization",
+      "Scale ID": "IM",
+      "Data Value": "3.75",
+      "N": "8",
+      "Standard Error": "0.1637",
+      "Lower CI Bound": "3.4292",
+      "Upper CI Bound": "4.0708",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2019",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.A.2.a.2",
+      "Element Name": "Manual Dexterity",
+      "Scale ID": "IM",
+      "Data Value": "2.12",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "1.8800",
+      "Upper CI Bound": "2.3700",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2019",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "2.B.1.a",
+      "Element Name": "Social Perceptiveness",
+      "Scale ID": "IM",
+      "Data Value": "3.00",
+      "N": "8",
+      "Standard Error": "0.0000",
+      "Lower CI Bound": "3.0000",
+      "Upper CI Bound": "3.0000",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2021",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "2.B.1.b",
+      "Element Name": "Coordination",
+      "Scale ID": "IM",
+      "Data Value": "3.12",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "2.8800",
+      "Upper CI Bound": "3.3700",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2021",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "2.B.2.i",
+      "Element Name": "Complex Problem Solving",
+      "Scale ID": "IM",
+      "Data Value": "3.88",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "3.6300",
+      "Upper CI Bound": "4.1200",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2021",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "2.B.3.b",
+      "Element Name": "Technology Design",
+      "Scale ID": "IM",
+      "Data Value": "2.25",
+      "N": "8",
+      "Standard Error": "0.1637",
+      "Lower CI Bound": "1.9292",
+      "Upper CI Bound": "2.5708",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2021",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "2.B.3.e",
+      "Element Name": "Programming",
+      "Scale ID": "IM",
+      "Data Value": "1.88",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "1.6300",
+      "Upper CI Bound": "2.1200",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2021",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "2.B.1.a",
+      "Element Name": "Social Perceptiveness",
+      "Scale ID": "IM",
+      "Data Value": "2.88",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "2.6300",
+      "Upper CI Bound": "3.1200",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "2.B.1.b",
+      "Element Name": "Coordination",
+      "Scale ID": "IM",
+      "Data Value": "3.00",
+      "N": "8",
+      "Standard Error": "0.0000",
+      "Lower CI Bound": "3.0000",
+      "Upper CI Bound": "3.0000",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "2.B.2.i",
+      "Element Name": "Complex Problem Solving",
+      "Scale ID": "IM",
+      "Data Value": "3.75",
+      "N": "8",
+      "Standard Error": "0.1637",
+      "Lower CI Bound": "3.4292",
+      "Upper CI Bound": "4.0708",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "2.B.3.b",
+      "Element Name": "Technology Design",
+      "Scale ID": "IM",
+      "Data Value": "3.12",
+      "N": "8",
+      "Standard Error": "0.3504",
+      "Lower CI Bound": "2.4383",
+      "Upper CI Bound": "3.8117",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "2.B.3.e",
+      "Element Name": "Programming",
+      "Scale ID": "IM",
+      "Data Value": "2.38",
+      "N": "8",
+      "Standard Error": "0.2631",
+      "Lower CI Bound": "1.8594",
+      "Upper CI Bound": "2.8906",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "2.B.1.a",
+      "Element Name": "Social Perceptiveness",
+      "Scale ID": "IM",
+      "Data Value": "4.00",
+      "N": "8",
+      "Standard Error": "0.0000",
+      "Lower CI Bound": "4.0000",
+      "Upper CI Bound": "4.0000",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "2.B.1.b",
+      "Element Name": "Coordination",
+      "Scale ID": "IM",
+      "Data Value": "3.88",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "3.6300",
+      "Upper CI Bound": "4.1200",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "2.B.2.i",
+      "Element Name": "Complex Problem Solving",
+      "Scale ID": "IM",
+      "Data Value": "3.12",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "2.8800",
+      "Upper CI Bound": "3.3700",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "2.B.3.b",
+      "Element Name": "Technology Design",
+      "Scale ID": "IM",
+      "Data Value": "1.88",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "1.6300",
+      "Upper CI Bound": "2.1200",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "2.B.3.e",
+      "Element Name": "Programming",
+      "Scale ID": "IM",
+      "Data Value": "1.75",
+      "N": "8",
+      "Standard Error": "0.1637",
+      "Lower CI Bound": "1.4292",
+      "Upper CI Bound": "2.0708",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2024",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "2.B.1.a",
+      "Element Name": "Social Perceptiveness",
+      "Scale ID": "IM",
+      "Data Value": "3.12",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "2.8800",
+      "Upper CI Bound": "3.3700",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2019",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "2.B.1.b",
+      "Element Name": "Coordination",
+      "Scale ID": "IM",
+      "Data Value": "3.12",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "2.8800",
+      "Upper CI Bound": "3.3700",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2019",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "2.B.2.i",
+      "Element Name": "Complex Problem Solving",
+      "Scale ID": "IM",
+      "Data Value": "3.75",
+      "N": "8",
+      "Standard Error": "0.1637",
+      "Lower CI Bound": "3.4292",
+      "Upper CI Bound": "4.0708",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2019",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "2.B.3.b",
+      "Element Name": "Technology Design",
+      "Scale ID": "IM",
+      "Data Value": "3.12",
+      "N": "8",
+      "Standard Error": "0.2266",
+      "Lower CI Bound": "2.6809",
+      "Upper CI Bound": "3.5691",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2019",
+      "Domain Source": "Analyst"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "2.B.3.e",
+      "Element Name": "Programming",
+      "Scale ID": "IM",
+      "Data Value": "1.88",
+      "N": "8",
+      "Standard Error": "0.1250",
+      "Lower CI Bound": "1.6300",
+      "Upper CI Bound": "2.1200",
+      "Recommend Suppress": "N",
+      "Not Relevant": "n/a",
+      "Date": "08/2019",
+      "Domain Source": "Analyst"
+    }
+  ],
+  "workStyleRatings": [
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.D.1.a",
+      "Element Name": "Innovation",
+      "Scale ID": "WI",
+      "Data Value": "1.97",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.D.1.c",
+      "Element Name": "Intellectual Curiosity",
+      "Scale ID": "WI",
+      "Data Value": "2.16",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.D.1.d",
+      "Element Name": "Tolerance for Ambiguity",
+      "Scale ID": "WI",
+      "Data Value": "1.33",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.D.1.e",
+      "Element Name": "Initiative",
+      "Scale ID": "WI",
+      "Data Value": "1.59",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.D.1.h",
+      "Element Name": "Perseverance",
+      "Scale ID": "WI",
+      "Data Value": "1.77",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.D.2.d",
+      "Element Name": "Cooperation",
+      "Scale ID": "WI",
+      "Data Value": "1.44",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.D.3.b",
+      "Element Name": "Attention to Detail",
+      "Scale ID": "WI",
+      "Data Value": "2.57",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2051.00",
+      "Element ID": "1.D.4.a",
+      "Element Name": "Stress Tolerance",
+      "Scale ID": "WI",
+      "Data Value": "1.43",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.D.1.a",
+      "Element Name": "Innovation",
+      "Scale ID": "WI",
+      "Data Value": "2.39",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.D.1.c",
+      "Element Name": "Intellectual Curiosity",
+      "Scale ID": "WI",
+      "Data Value": "2.20",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.D.1.d",
+      "Element Name": "Tolerance for Ambiguity",
+      "Scale ID": "WI",
+      "Data Value": "1.24",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.D.1.e",
+      "Element Name": "Initiative",
+      "Scale ID": "WI",
+      "Data Value": "1.44",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.D.1.h",
+      "Element Name": "Perseverance",
+      "Scale ID": "WI",
+      "Data Value": "1.67",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.D.2.d",
+      "Element Name": "Cooperation",
+      "Scale ID": "WI",
+      "Data Value": "1.03",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.D.3.b",
+      "Element Name": "Attention to Detail",
+      "Scale ID": "WI",
+      "Data Value": "2.74",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "17-2141.00",
+      "Element ID": "1.D.4.a",
+      "Element Name": "Stress Tolerance",
+      "Scale ID": "WI",
+      "Data Value": "1.27",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.D.1.a",
+      "Element Name": "Innovation",
+      "Scale ID": "WI",
+      "Data Value": "1.36",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.D.1.c",
+      "Element Name": "Intellectual Curiosity",
+      "Scale ID": "WI",
+      "Data Value": "1.48",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.D.1.d",
+      "Element Name": "Tolerance for Ambiguity",
+      "Scale ID": "WI",
+      "Data Value": "1.37",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.D.1.e",
+      "Element Name": "Initiative",
+      "Scale ID": "WI",
+      "Data Value": "1.53",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.D.1.h",
+      "Element Name": "Perseverance",
+      "Scale ID": "WI",
+      "Data Value": "2.12",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.D.2.d",
+      "Element Name": "Cooperation",
+      "Scale ID": "WI",
+      "Data Value": "2.55",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.D.3.b",
+      "Element Name": "Attention to Detail",
+      "Scale ID": "WI",
+      "Data Value": "1.81",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "25-2021.00",
+      "Element ID": "1.D.4.a",
+      "Element Name": "Stress Tolerance",
+      "Scale ID": "WI",
+      "Data Value": "2.06",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.D.1.a",
+      "Element Name": "Innovation",
+      "Scale ID": "WI",
+      "Data Value": "2.80",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.D.1.c",
+      "Element Name": "Intellectual Curiosity",
+      "Scale ID": "WI",
+      "Data Value": "2.08",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.D.1.d",
+      "Element Name": "Tolerance for Ambiguity",
+      "Scale ID": "WI",
+      "Data Value": "1.49",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.D.1.e",
+      "Element Name": "Initiative",
+      "Scale ID": "WI",
+      "Data Value": "1.56",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.D.1.h",
+      "Element Name": "Perseverance",
+      "Scale ID": "WI",
+      "Data Value": "1.52",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.D.2.d",
+      "Element Name": "Cooperation",
+      "Scale ID": "WI",
+      "Data Value": "1.35",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.D.3.b",
+      "Element Name": "Attention to Detail",
+      "Scale ID": "WI",
+      "Data Value": "2.28",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    },
+    {
+      "O*NET-SOC Code": "27-1021.00",
+      "Element ID": "1.D.4.a",
+      "Element Name": "Stress Tolerance",
+      "Scale ID": "WI",
+      "Data Value": "0.97",
+      "Date": "12/2025",
+      "Domain Source": "AI/Expert"
+    }
+  ]
+}
