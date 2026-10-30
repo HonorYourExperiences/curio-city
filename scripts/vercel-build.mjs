@@ -3,11 +3,15 @@ if (!/^postgres(?:ql)?:\/\//.test(process.env.DATABASE_URL ?? ""))
   throw new Error(
     "Vercel deployment requires a persistent PostgreSQL DATABASE_URL. Local SQLite is not supported.",
   );
-const run = (args) =>
+const run = (args, overrides = {}) =>
   new Promise((resolve, reject) => {
     const child = spawn(process.execPath, args, {
       stdio: "inherit",
-      env: { ...process.env, BYDT_DATABASE_PROVIDER: "postgresql" },
+      env: {
+        ...process.env,
+        BYDT_DATABASE_PROVIDER: "postgresql",
+        ...overrides,
+      },
     });
     child.on("error", reject);
     child.on("exit", (code) =>
@@ -22,11 +26,19 @@ await run([
   "--schema",
   "prisma/postgres/schema.prisma",
 ]);
-await run([
-  "node_modules/prisma/build/index.js",
-  "migrate",
-  "deploy",
-  "--schema",
-  "prisma/postgres/schema.prisma",
-]);
+await run(
+  [
+    "node_modules/prisma/build/index.js",
+    "migrate",
+    "deploy",
+    "--schema",
+    "prisma/postgres/schema.prisma",
+  ],
+  {
+    DATABASE_URL:
+      process.env.DATABASE_URL_UNPOOLED ??
+      process.env.POSTGRES_URL_NON_POOLING ??
+      process.env.DATABASE_URL,
+  },
+);
 await run(["node_modules/next/dist/bin/next", "build"]);
